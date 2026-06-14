@@ -29,6 +29,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: siteConfig.name,
   },
+  icons: {
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,

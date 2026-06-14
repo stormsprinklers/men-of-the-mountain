@@ -48,12 +48,12 @@ export function Hero() {
           <div className="hidden lg:flex justify-center animate-fade-in-up">
             <div className="relative">
               <div className="absolute -inset-4 gradient-accent opacity-20 blur-2xl rounded-sm" />
-              <div className="relative w-72 h-80 card-shadow-lg border border-border rounded-sm overflow-hidden">
+              <div className="relative w-72 aspect-[3/4] card-shadow-lg border border-border rounded-sm overflow-hidden">
                 <Image
                   src="/images/john-baker.png"
                   alt="John Baker, founder of Men of the Mountain Coaching"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-[center_62%]"
                   sizes="288px"
                   priority
                 />

@@ -26,7 +26,7 @@ export default function AboutPage() {
                 src="/images/john-baker.png"
                 alt="John Baker"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[center_62%]"
                 sizes="(max-width: 768px) 100vw, 400px"
               />
             </div>
