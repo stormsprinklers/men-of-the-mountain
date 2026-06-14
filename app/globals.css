@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background-deep: #050a12;
+  --background-mid: #0f1f3d;
+  --surface: #111827;
+  --surface-elevated: #1a2332;
+  --foreground: #ffffff;
+  --foreground-muted: #94a3b8;
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+@theme inline {
+  --color-background-deep: var(--background-deep);
+  --color-background-mid: var(--background-mid);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-oswald);
+}
+
+.font-heading {
+  font-family: var(--font-oswald), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, var(--background-deep) 0%, var(--background-mid) 50%, var(--background-deep) 100%);
+  background-attachment: fixed;
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.4);
+  color: white;
+}
+
+.card-shadow {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.card-shadow-lg {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+}
+
+.mountain-divider {
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.3), transparent);
+  height: 1px;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
